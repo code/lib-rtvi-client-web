@@ -5,6 +5,23 @@ All notable changes to **Pipecat Client JS** will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.9.0](https://github.com/code/lib-rtvi-client-web/compare/client-js-v1.8.0...client-js-v1.9.0) (2026-05-05)
+
+
+### Features
+
+* **js:** add MediaState lifecycle on PipecatClient ([09cf915](https://github.com/code/lib-rtvi-client-web/commit/09cf915db7138b54e56c6145258b7f797b72c3a8))
+* **js:** add MediaState lifecycle on PipecatClient ([793e162](https://github.com/code/lib-rtvi-client-web/commit/793e1625efe40ea6e37199e6212f978810caa93b))
+* **js:** disconnect the client when the bot disconnects, but give the option to stay connected ([2f6fbdb](https://github.com/code/lib-rtvi-client-web/commit/2f6fbdbdd44e01faa80f11d70c93e73b41cf3ad7))
+
+
+### Bug Fixes
+
+* add exports map for proper ESM/CJS resolution ([a66617b](https://github.com/code/lib-rtvi-client-web/commit/a66617b9f8f0b9198a2a25d6540e789baf5e2b03))
+* add exports map for proper ESM/CJS resolution ([e6b6ef2](https://github.com/code/lib-rtvi-client-web/commit/e6b6ef2b15103a9f9762f94d0d221b83a407bc0c)), closes [#114](https://github.com/code/lib-rtvi-client-web/issues/114)
+* **client-js:** only warn on deprecated onBotTranscript when subscribed ([c4c7390](https://github.com/code/lib-rtvi-client-web/commit/c4c7390407548951645029744e04d634390bfe2b))
+* **js:** only warn on deprecated onBotTranscript when subscribed ([0df6ffc](https://github.com/code/lib-rtvi-client-web/commit/0df6ffcfbd8826ea640269a212f43b794e244151))
+
 ## [1.8.0](https://github.com/pipecat-ai/pipecat-client-web/compare/client-js-v1.7.0...client-js-v1.8.0) (2026-04-30)
 
 
