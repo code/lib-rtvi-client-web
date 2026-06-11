@@ -5,6 +5,45 @@ All notable changes to **Pipecat Client JS** will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.12.0](https://github.com/code/lib-rtvi-client-web/compare/client-js-v1.11.0...client-js-v1.12.0) (2026-06-11)
+
+
+### Features
+
+* add accessibility-snapshot walker and useA11ySnapshot hook ([12743eb](https://github.com/code/lib-rtvi-client-web/commit/12743ebf74be929ed64dc3a7fd7e49285c38f494))
+* add click command and native &lt;select&gt; support for set_input_value ([3efb560](https://github.com/code/lib-rtvi-client-web/commit/3efb56010026134be5ae03d458e8e79566a14882))
+* add select_text command and useStandardSelectTextHandler ([1cf2dee](https://github.com/code/lib-rtvi-client-web/commit/1cf2dee6953ae766d7b486902c9f754c4ae5ffe6))
+* add set_input_value command and useStandardSetInputValueHandler ([2d87593](https://github.com/code/lib-rtvi-client-web/commit/2d8759357491877b36aa7f4076728266d7700003))
+* add UI agent protocol with UIAgentClient, hooks, and command dispatch ([b6af682](https://github.com/code/lib-rtvi-client-web/commit/b6af6820a3d3db08c0e244449473d7f85c8d5e27))
+* add UI agent task lifecycle protocol on the client ([62d37de](https://github.com/code/lib-rtvi-client-web/commit/62d37deab2c35115aefdf0f41d4b9ec79502fb50))
+* **js:** add MediaState lifecycle on PipecatClient ([09cf915](https://github.com/code/lib-rtvi-client-web/commit/09cf915db7138b54e56c6145258b7f797b72c3a8))
+* **js:** add MediaState lifecycle on PipecatClient ([793e162](https://github.com/code/lib-rtvi-client-web/commit/793e1625efe40ea6e37199e6212f978810caa93b))
+* **js:** bump RTVI protocol version to 1.4.0 ([b353c0e](https://github.com/code/lib-rtvi-client-web/commit/b353c0e687ce91d5af031373c6b51fa576d52411))
+* **js:** bump RTVI protocol version to 1.4.0 ([e5d2568](https://github.com/code/lib-rtvi-client-web/commit/e5d256815eb69c5bef76d3d7fa8865b8dab42733))
+* **js:** bump RTVI_PROTOCOL_VERSION to 1.3.0 for UI Agent Protocol ([98f3e7b](https://github.com/code/lib-rtvi-client-web/commit/98f3e7bb29729dd16af21b75b872cf7c910f2529))
+* **js:** capture text selection and promote &lt;p&gt; to a refed paragraph ([94fb746](https://github.com/code/lib-rtvi-client-web/commit/94fb74621f0c55ff92a4fec6ce4a6c0f190e1c1d))
+* **js:** disconnect the client when the bot disconnects, but give the option to stay connected ([2f6fbdb](https://github.com/code/lib-rtvi-client-web/commit/2f6fbdbdd44e01faa80f11d70c93e73b41cf3ad7))
+* **js:** expose findRefForElement on a11y walker for element-to-ref lookup ([47c6d6d](https://github.com/code/lib-rtvi-client-web/commit/47c6d6d78c491f73f63f665de254342e889e5af4))
+* **js:** new callback for handling unsupported features ([3f38460](https://github.com/code/lib-rtvi-client-web/commit/3f384604a1c3e5d38ba991319df6406a3b044850))
+* **js:** rename UI agent -&gt; worker; UIAgent -&gt; UIWorker ([4a232a0](https://github.com/code/lib-rtvi-client-web/commit/4a232a0ae95e30d9f9917fb4b82e4aafa346eb56))
+* **js:** rename UI task protocol to job-group ([de1f3b3](https://github.com/code/lib-rtvi-client-web/commit/de1f3b336b09e7f7ebc9e7d7dbb6def9c72c1426))
+* **js:** walker uses option text for select values and emits options as children ([a9a08d0](https://github.com/code/lib-rtvi-client-web/commit/a9a08d09b5383a51acc97b1c02bb19c2b68ad2b0))
+* promote UI Agent Protocol to first-class RTVI message types ([39c2593](https://github.com/code/lib-rtvi-client-web/commit/39c259367bce11d4d6fb534979e4461e0c9ff92b))
+
+
+### Bug Fixes
+
+* add exports map for proper ESM/CJS resolution ([a66617b](https://github.com/code/lib-rtvi-client-web/commit/a66617b9f8f0b9198a2a25d6540e789baf5e2b03))
+* add exports map for proper ESM/CJS resolution ([e6b6ef2](https://github.com/code/lib-rtvi-client-web/commit/e6b6ef2b15103a9f9762f94d0d221b83a407bc0c)), closes [#114](https://github.com/code/lib-rtvi-client-web/issues/114)
+* **client-js:** only warn on deprecated onBotTranscript when subscribed ([c4c7390](https://github.com/code/lib-rtvi-client-web/commit/c4c7390407548951645029744e04d634390bfe2b))
+* **js:** bump uuid to ^11.1.1 to patch GHSA-w5hq-g745-h8pq ([c4f9108](https://github.com/code/lib-rtvi-client-web/commit/c4f9108c43cd0fbf0260f93007360f0305ce8881))
+* **js:** only warn on deprecated onBotTranscript when subscribed ([0df6ffc](https://github.com/code/lib-rtvi-client-web/commit/0df6ffcfbd8826ea640269a212f43b794e244151))
+* **js:** refresh snapshot when native form controls change ([56fa3c5](https://github.com/code/lib-rtvi-client-web/commit/56fa3c531be29d085f5585f622b2eb2cb7d56097))
+* **js:** refresh snapshot when native form controls change ([f09e1be](https://github.com/code/lib-rtvi-client-web/commit/f09e1beb4729c1a581623a0e88650aa19251e5de))
+* **js:** resolve open Dependabot dependency vulnerabilities ([61ae50c](https://github.com/code/lib-rtvi-client-web/commit/61ae50cdcf5de459d7de99ba609ad9388652e0bb))
+* respect final flag in mergeMessages and handle user-llm-text event ([bed406f](https://github.com/code/lib-rtvi-client-web/commit/bed406f679faa7428d7d93780db877c17cd0bdb8))
+* respect final flag in mergeMessages and handle user-llm-text event ([6119ada](https://github.com/code/lib-rtvi-client-web/commit/6119adac15805c28bac22f8594018e1867930a95))
+
 ## [1.11.0](https://github.com/pipecat-ai/pipecat-client-web/compare/client-js-v1.10.0...client-js-v1.11.0) (2026-06-02)
 
 
