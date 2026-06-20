@@ -5,6 +5,51 @@ All notable changes to **Pipecat Client React** will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.8.0](https://github.com/code/lib-rtvi-client-web/compare/client-react-v1.7.1...client-react-v1.8.0) (2026-06-20)
+
+
+### Features
+
+* add accessibility-snapshot walker and useA11ySnapshot hook ([12743eb](https://github.com/code/lib-rtvi-client-web/commit/12743ebf74be929ed64dc3a7fd7e49285c38f494))
+* add click command and native &lt;select&gt; support for set_input_value ([3efb560](https://github.com/code/lib-rtvi-client-web/commit/3efb56010026134be5ae03d458e8e79566a14882))
+* add select_text command and useStandardSelectTextHandler ([1cf2dee](https://github.com/code/lib-rtvi-client-web/commit/1cf2dee6953ae766d7b486902c9f754c4ae5ffe6))
+* add set_input_value command and useStandardSetInputValueHandler ([2d87593](https://github.com/code/lib-rtvi-client-web/commit/2d8759357491877b36aa7f4076728266d7700003))
+* add UI agent protocol with UIAgentClient, hooks, and command dispatch ([b6af682](https://github.com/code/lib-rtvi-client-web/commit/b6af6820a3d3db08c0e244449473d7f85c8d5e27))
+* add UI agent task lifecycle protocol on the client ([62d37de](https://github.com/code/lib-rtvi-client-web/commit/62d37deab2c35115aefdf0f41d4b9ec79502fb50))
+* **client-react:** built-in conversation state management ([401cb0f](https://github.com/code/lib-rtvi-client-web/commit/401cb0fb94c7a8c2aee07743af9b07c27de17400))
+* **client-react:** built-in conversation state management ([b05c13d](https://github.com/code/lib-rtvi-client-web/commit/b05c13d92ff41873db467423a7e946bf0461c48f))
+* **client-react:** improve turn detection and rendering performance ([4db5611](https://github.com/code/lib-rtvi-client-web/commit/4db5611cc31eb9c963895d4bfb42e55895e95991))
+* **client-react:** replace onMessageAdded with typed lifecycle callbacks ([729036a](https://github.com/code/lib-rtvi-client-web/commit/729036a288c797b7097d5847f54073797b83353f))
+* promote UI Agent Protocol to first-class RTVI message types ([39c2593](https://github.com/code/lib-rtvi-client-web/commit/39c259367bce11d4d6fb534979e4461e0c9ff92b))
+* **react:** add botOutputFilter option to usePipecatConversation ([0a73234](https://github.com/code/lib-rtvi-client-web/commit/0a7323439d669ef0a406f21bb1adad7019b319ff))
+* **react:** add support for bot-output-progress events ([f6bf72d](https://github.com/code/lib-rtvi-client-web/commit/f6bf72d43aa7686debab7949852d4a4a081755d3))
+* **react:** add useMediaState hook + autoInitDevices opt-in ([f7b4e1b](https://github.com/code/lib-rtvi-client-web/commit/f7b4e1b3cef968e23a185e89901826d6c1532211))
+* **react:** add useMediaState hook and autoInitDevices opt-in ([d6e6ef3](https://github.com/code/lib-rtvi-client-web/commit/d6e6ef3f732d12c0876f5a5f36f313bfc211a08f))
+* **react:** rename UI agent -&gt; worker; UIAgent -&gt; UIWorker ([ab523cd](https://github.com/code/lib-rtvi-client-web/commit/ab523cd60b70fa9bbdd99d0e8b082f54867c24b1))
+* **react:** rename UI task protocol to job-group ([dc347ab](https://github.com/code/lib-rtvi-client-web/commit/dc347abdaf29819646b8a2ebfd7152561e10d5e4))
+* **react:** walker PII opt-out, configurable handlers, logSnapshots hook flag ([46d88c9](https://github.com/code/lib-rtvi-client-web/commit/46d88c9ce6056c5c1833e0d9aeaacba98aee998e))
+
+
+### Bug Fixes
+
+* add exports map for proper ESM/CJS resolution ([a66617b](https://github.com/code/lib-rtvi-client-web/commit/a66617b9f8f0b9198a2a25d6540e789baf5e2b03))
+* add exports map for proper ESM/CJS resolution ([e6b6ef2](https://github.com/code/lib-rtvi-client-web/commit/e6b6ef2b15103a9f9762f94d0d221b83a407bc0c)), closes [#114](https://github.com/code/lib-rtvi-client-web/issues/114)
+* **react:** backdate injected messages during active bot response ([ec44e21](https://github.com/code/lib-rtvi-client-web/commit/ec44e21b659bee25cca236599d07c6a93093f6fd))
+* **react:** backdate injected messages during active bot response ([2d5fdf2](https://github.com/code/lib-rtvi-client-web/commit/2d5fdf2285b4eef33867fca4a251d5afe53ceb15))
+* **react:** backdate mid-turn function calls to preserve karaoke cursor ([da6c3e8](https://github.com/code/lib-rtvi-client-web/commit/da6c3e876b87e184962094c0161dbc14dd92b503))
+* **react:** backdate mid-turn function calls to preserve karaoke cursor ([5a885e9](https://github.com/code/lib-rtvi-client-web/commit/5a885e954cdf9a2b1e4282cfdfcd9bf76dcc6bed))
+* **react:** fix karaoke highlighting for non-ASCII text and punctuation ([268f5f6](https://github.com/code/lib-rtvi-client-web/commit/268f5f6910c8e497673604fab2fc511c8a6957c4))
+* **react:** Fixing automated tests ([3a5afc2](https://github.com/code/lib-rtvi-client-web/commit/3a5afc2598c503b3eb4138d9826eeba875143a83))
+* **react:** Fixing automated tests ([8996471](https://github.com/code/lib-rtvi-client-web/commit/8996471c443f8f329523aa3de24bd8b8d2fb0c8e))
+* **react:** handle S2S races, mid-sentence drift, and multi-word TTS events ([4659e66](https://github.com/code/lib-rtvi-client-web/commit/4659e661cb19dbe774eb9afd34d833359cd8aad5))
+* **react:** handle S2S races, mid-sentence drift, and multi-word TTS events ([1b7b478](https://github.com/code/lib-rtvi-client-web/commit/1b7b478b082a5cad266709ce98c0ab39653ede15))
+* **react:** strip turn completion markers from conversation state ([ea78dcf](https://github.com/code/lib-rtvi-client-web/commit/ea78dcf3ec6d9efdc4f08c74e6e19ce479aadbcd))
+* **react:** strip turn completion markers from conversation state ([d5d955b](https://github.com/code/lib-rtvi-client-web/commit/d5d955b284823d6723455ef60b901d9f44a8d770))
+* **react:** treat pure-punctuation spoken text as consumed ([19043f7](https://github.com/code/lib-rtvi-client-web/commit/19043f770a4af475e6eabc9a51cadc86a25ec902))
+* **react:** use Unicode-aware regex for bot output text matching ([be2f9a9](https://github.com/code/lib-rtvi-client-web/commit/be2f9a9008c098d41c56cdc93f230af0ab1c42dd)), closes [#184](https://github.com/code/lib-rtvi-client-web/issues/184)
+* respect final flag in mergeMessages and handle user-llm-text event ([bed406f](https://github.com/code/lib-rtvi-client-web/commit/bed406f679faa7428d7d93780db877c17cd0bdb8))
+* respect final flag in mergeMessages and handle user-llm-text event ([6119ada](https://github.com/code/lib-rtvi-client-web/commit/6119adac15805c28bac22f8594018e1867930a95))
+
 ## [1.7.1](https://github.com/pipecat-ai/pipecat-client-web/compare/client-react-v1.7.0...client-react-v1.7.1) (2026-06-19)
 
 
